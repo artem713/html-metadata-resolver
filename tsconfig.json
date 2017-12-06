@@ -12,9 +12,7 @@
       "es2017"
     ],
     "allowSyntheticDefaultImports": false,
-    "declaration": true,
     "noImplicitAny": false,
-    "emitDecoratorMetadata": true,
     "sourceMap": false,
     "allowJs": true,
     "strictNullChecks": true
@@ -23,6 +21,6 @@
     "src/**/*.?s"
   ],
   "exclude": [
-    "src/test"
+    "src/tests"
   ]
 }

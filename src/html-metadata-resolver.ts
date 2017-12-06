@@ -13,7 +13,7 @@ export function resolveMetadata(html: string) {
         metadata = {
           ...metadata,
           ...attrs
-        }
+        } as IWebpageMetadata
       }
     }
   }, {decodeEntities: true})
