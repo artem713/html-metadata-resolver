@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "types": [
+      "node",
+      "jest"
+    ],
+    "target": "es2015",
+    "lib": [
+      "es2017"
+    ],
+    "allowSyntheticDefaultImports": false,
+    "declaration": true,
+    "noImplicitAny": false,
+    "emitDecoratorMetadata": true,
+    "sourceMap": false,
+    "allowJs": true,
+    "strictNullChecks": true
+  },
+  "include": [
+    "src/**/*.?s"
+  ],
+  "exclude": [
+    "src/test"
+  ]
+}

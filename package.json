@@ -1,0 +1,31 @@
+{
+  "name": "html-metadata-resolver",
+  "version": "1.0.0",
+  "description": "A service for resolving meta tags attributes",
+  "main": "src/index.ts",
+  "author": "art.trubitsyn@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artem713/html-metadata-resolver"
+  },
+  "keywords": [
+    "meta", "attributes", "resolver", "html"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "htmlparser2": "^3.9.2"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "jest -c jest.config.json",
+    "test:watch": "jest -c jest.config.json --watch",
+    "test:coverage": "jest -c jest.config.json --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.8",
+    "jest": "^21.2.1",
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
+  }
+}
