@@ -1,19 +1,15 @@
 import {Parser} from 'htmlparser2'
 
-export interface IWebpageMetadata {
+export interface IWebpageMetadataItem {
   [key: string]: string
 }
 
 export function resolveMetadata(html: string) {
-  let metadata: IWebpageMetadata = {}
-  
+  const metadata: IWebpageMetadataItem[] = []
   const parser = new Parser({
     onopentag(name: string, attrs: object) {
       if(name === 'meta') {
-        metadata = {
-          ...metadata,
-          ...attrs
-        } as IWebpageMetadata
+        metadata.push(attrs as IWebpageMetadataItem)
       }
     }
   }, {decodeEntities: true})
