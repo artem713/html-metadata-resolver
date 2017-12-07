@@ -23,7 +23,9 @@ module.exports = {
   },
   output: {
     filename: 'html-metadata-resolver.js',
-    path: outputPath
+    path: outputPath,
+    library: 'html-metadata-resolver',
+    libraryTarget: 'umd'
   },
   plugins: [
     new CleanWebpackPlugin([outputPath])
