@@ -1,6 +1,6 @@
 {
   "name": "html-metadata-resolver",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A service for resolving meta tags attributes",
   "main": "dist/html-metadata-resolver.js",
   "author": "art.trubitsyn@gmail.com",
