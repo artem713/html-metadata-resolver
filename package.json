@@ -21,14 +21,15 @@
   "scripts": {
     "prepublish": "yarn build",
     "build": "webpack --config webpack.config.js",
-    "test": "jest -c jest.config.json",
+    "test": "jest -c jest.config.json --coverage",
     "test:watch": "jest -c jest.config.json --watch",
-    "test:coverage": "jest -c jest.config.json --coverage"
+    "posttest": "codecov -f coverage/*.json"
   },
   "devDependencies": {
     "@types/jest": "^21.1.8",
     "@types/node": "^8.0.56",
     "clean-webpack-plugin": "^0.1.17",
+    "codecov": "^3.0.0",
     "jest": "^21.2.1",
     "ts-loader": "^3.2.0",
     "typescript": "^2.6.2",
